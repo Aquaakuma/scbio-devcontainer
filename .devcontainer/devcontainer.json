@@ -1,0 +1,44 @@
+{
+    "name": "scBio",
+
+    "image": "mcr.microsoft.com/devcontainers/base:resolute",
+
+    "features": {
+        "ghcr.io/devcontainers/features/conda:2": {}
+    },
+
+    "remoteUser": "vscode",
+
+    "containerEnv": {
+        "CONDARC": "${containerWorkspaceFolder}/.devcontainer/.condarc"
+    },
+
+    "postCreateCommand": "bash .devcontainer/setup.sh",
+
+    "forwardPorts": [8888],
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.debugpy",
+                "REditorSupport.r",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.jupyter-renderers"
+            ],
+            "settings": {
+                "python.defaultInterpreterPath": "/opt/conda/envs/scbio/bin/python",
+                "python.terminal.activateEnvironment": true,
+
+                "r.executablePath": "/opt/conda/envs/scbio/bin/R",
+                "r.consolePath": "/opt/conda/envs/scbio/bin/R",
+                "r.alwaysUseActiveTerminal": true,
+
+                "[python]": {
+                    "editor.formatOnSave": true
+                }
+            }
+        }
+    }
+}

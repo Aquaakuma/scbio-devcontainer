@@ -1,0 +1,9 @@
+channels:
+  - conda-forge
+  - bioconda
+  
+channel_priority: strict
+
+show_channel_urls: true
+
+auto_activate_base: false

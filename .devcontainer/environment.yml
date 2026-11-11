@@ -1,0 +1,27 @@
+name: scbio
+
+channels:
+  - conda-forge
+  - bioconda
+
+dependencies:
+  # Python
+  - python=3.12
+  - pip
+  - pylance
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - scanpy
+  - anndata
+  # Jupyter Notebook
+  - ipykernel
+
+  # R
+  - r-base
+  - r-irkernel
+  - r-languageserver
+  - r-dplyr
+  - r-ggplot2
+  - r-seurat

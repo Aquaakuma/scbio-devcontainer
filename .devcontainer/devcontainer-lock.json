@@ -1,0 +1,9 @@
+{
+  "features": {
+    "ghcr.io/devcontainers/features/conda:2": {
+      "version": "2.0.2",
+      "resolved": "ghcr.io/devcontainers/features/conda@sha256:14f4d8889f0310718ac9d398b1e096f6fd9b1083f6a562c0db5ec936c310baed",
+      "integrity": "sha256:14f4d8889f0310718ac9d398b1e096f6fd9b1083f6a562c0db5ec936c310baed"
+    }
+  }
+}
