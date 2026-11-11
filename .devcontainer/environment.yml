@@ -9,6 +9,7 @@ dependencies:
   # Python
   - python=3.12
   - pip
+  - pylance
   - numpy
   - pandas
   - matplotlib
