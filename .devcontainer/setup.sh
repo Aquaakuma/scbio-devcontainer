@@ -2,7 +2,9 @@
 set -euo pipefail
 
 ENV_NAME="scbio"
-ENV_FILE=".devcontainer/environment.yml"
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
+ENV_FILE="$SCRIPT_DIR/environment.yml"
+export CONDARC="$SCRIPT_DIR/.condarc"
 
 if [ -d "/opt/conda/envs/$ENV_NAME/conda-meta" ]; then
     conda env update \

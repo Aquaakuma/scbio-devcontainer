@@ -3,12 +3,12 @@ name: scbio
 channels:
   - conda-forge
   - bioconda
+  - nodefaults
 
 dependencies:
   # Python
   - python=3.12
   - pip
-  - pylance
   - numpy
   - pandas
   - matplotlib

@@ -1,0 +1,28 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+.pixi/
+.ruff_cache/
+.pytest_cache/
+
+# R sessions
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Local data and results (adapt in downstream projects)
+/data/
+/results/
+/outputs/
+
+# OS files
+.DS_Store
+Thumbs.db
